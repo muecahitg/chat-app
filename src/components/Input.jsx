@@ -7,7 +7,7 @@ function Input({onSend}){
         if(!text.trim()) return
 
         onSend({
-            user: 'cahit',
+            user: 'user',
             text: text,
             time: new Date().toLocaleTimeString()
         })

@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <p>
-        <h2>User: </h2>
+        {/* <h2>User: </h2> */}
         Status: {isConnected ? 'Connected' : 'Disconnected'}
       </p>
       <ChatWindow messages={messages || []}/>
