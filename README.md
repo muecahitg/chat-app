@@ -1,16 +1,68 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# chat-app
+ 
+A real-time chat web app built with React, Node.js, Express, and Socket.io.
+ 
+## Features
+ 
+- Real-time messaging between multiple users
+- Connection status indicator
+- Timestamp on each message
+- Minimal and clean UI
+## Tech Stack
+ 
+- **Frontend** — React (Vite)
+- **Backend** — Node.js + Express
+- **Real-time** — Socket.io
+## Project Structure
+ 
+```
+chat-app/
+├── server.js               # Express + Socket.io backend
+├── public/                 # Static assets
+└── src/
+    ├── App.jsx             # Root component
+    ├── App.css             # Global styles
+    ├── components/
+    │   ├── ChatWindow.jsx  # Displays the list of messages
+    │   ├── Message.jsx     # Single message bubble
+    │   └── Input.jsx       # Text input and send button
+    └── hooks/
+        └── useSocket.js    # Socket.io connection logic
+```
+ 
+## Getting Started
+ 
+### Prerequisites
+ 
+- Node.js
+- npm
+### Installation
+ 
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/chat-app.git
+cd chat-app
+```
+ 
+2. Install dependencies
+```bash
+npm install
+```
+ 
+### Running the app
+ 
+Start the backend server:
+ 
+```bash
+node server.js
+```
+ 
+Start the frontend dev server in a second terminal:
+ 
+```bash
+npm run dev
+```
+ 
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+ 
+To test real-time messaging, open the app in two browser tabs and send messages between them.
