@@ -1,13 +1,13 @@
 import {useState} from 'react'
 
-function Input({onSend}){
+function Input({onSend, username}){
     const [text, setText] = useState('')
 
     function handleSend() {
         if(!text.trim()) return
 
         onSend({
-            user: 'user',
+            user: username,
             text: text,
             time: new Date().toLocaleTimeString()
         })
@@ -21,7 +21,7 @@ function Input({onSend}){
 
     return (
         <div className='input-bar'>
-            <input 
+            <input
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 onKeyDown={handleKeyDown}
