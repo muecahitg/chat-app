@@ -70,6 +70,6 @@ To test real-time messaging, open the app in two browser tabs and send messages 
 ## Planned Features
 
 - [ ] **Improve Styling - edit CSS**
-- [ ] **Usernames** — let users enter a name before joining the chat
+- [x] **Usernames** — let users enter a name before joining the chat
 - [ ] **Message history** — store messages so new users can see previous conversations
 - [ ] **Multiple rooms** — create and join different chat rooms
