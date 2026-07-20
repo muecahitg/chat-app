@@ -4,10 +4,9 @@ A real-time chat web app built with React, Node.js, Express, and Socket.io.
  
 ## Features
  
-- Real-time messaging between multiple users
+- Real-time messaging between multiple users (LLM-Bot soon)
 - Connection status indicator
 - Timestamp on each message
-- Minimal and clean UI
 ## Tech Stack
  
 - **Frontend** — React (Vite)
@@ -25,6 +24,7 @@ chat-app/
     ├── components/
     │   ├── ChatWindow.jsx  # Displays the list of messages
     │   ├── Message.jsx     # Single message bubble
+    │   ├── Sidebar.jsx     # Sidebar - Participants list
     │   └── Input.jsx       # Text input and send button
     └── hooks/
         └── useSocket.js    # Socket.io connection logic
